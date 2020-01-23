@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+ <DESCRIPTION>
+   VizieR Astronomical Server vizier.u-strasbg.fr
+    Date: 2020-01-17T12:25:57 [V1.99+ (14-Oct-2013)]
+   Explanations and Statistics of UCDs:			See LINK below
+   In case of problem, please report to:	cds-question@unistra.fr
+   In this version, NULL integer columns are written as an empty string
+   &lt;TD&gt;&lt;/TD&gt;, explicitely possible from VOTable-1.3
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+<INFO ID="VERSION" name="votable-version" value="1.99+ (14-Oct-2013)"/>
+<INFO ID="Ref" name="-ref" value="VIZ5e21a73578e7"/>
+<INFO ID="MaxTuples" name="-out.max" value="99999"/>
+<INFO name="queryParameters" value="21">
+-oc.form=dec
+-out.max=99999
+-nav=cat:J/MNRAS/463/3513&amp;tab:{J/MNRAS/463/3513/table1}&amp;key:source=J/MNRAS/463/3513/table1&amp;HTTPPRM:&amp;
+-c.eq=J2000
+-c.r=  2
+-c.u=arcmin
+-c.geom=r
+-source=J/MNRAS/463/3513/table1
+-order=I
+-out=EPIC
+-out=Vmag
+-out=B-V
+-out=Per
+-out=e_Per
+-out=FVI
+-out=Std
+-out=Stdc
+-out=RAJ2000
+-out=DEJ2000
+-out=Simbad
+Simbad=Simbad
+</INFO>
+
+<!--
+Execution Reports
+ -->
+
+<RESOURCE ID="yCat_74633513" name="J/MNRAS/463/3513">
+  <DESCRIPTION>M67 Kepler/K2-Campaign-5 variable stars (Gonzalez, 2016)</DESCRIPTION>
+  <COOSYS ID="J2000" system="eq_FK5" equinox="J2000"/>
+  <TABLE ID="J_MNRAS_463_3513_table1" name="J/MNRAS/463/3513/table1">
+    <DESCRIPTION>Derived periods from the PDCSAP_FLUX values</DESCRIPTION>
+    <!-- Definitions of GROUPs and FIELDs -->
+
+<!-- +++No column could be found to attach a LINK in table: J/MNRAS/463/3513/table1 -->
+    <FIELD name="EPIC" ucd="meta.id;meta.main" datatype="int" width="9"><!-- ucd="ID_CATALOG" -->
+      <DESCRIPTION>K2 Input Catalog identifier</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Vmag" ucd="phot.mag;em.opt.V" datatype="float" width="5" precision="2" unit="mag"><!-- ucd="PHOT_MAG_V" -->
+      <DESCRIPTION>Visual magnitude</DESCRIPTION>
+    </FIELD>
+    <FIELD name="B-V" ucd="phot.color;em.opt.B;em.opt.V" datatype="float" width="5" precision="2" unit="mag"><!-- ucd="PHOT_CI_B-V" -->
+      <DESCRIPTION>B-V color index</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Per" ucd="time.period" datatype="float" width="4" precision="1" unit="d"><!-- ucd="TIME_PERIOD" -->
+      <DESCRIPTION>Period</DESCRIPTION>
+    </FIELD>
+    <FIELD name="e_Per" ucd="stat.error" datatype="float" width="4" precision="1" unit="d"><!-- ucd="ERROR" -->
+      <DESCRIPTION>Period error</DESCRIPTION>
+    </FIELD>
+    <FIELD name="FVI" ucd="meta.code;src.var.index" datatype="float" width="5" precision="2"><!-- ucd="VAR_INDEX" -->
+      <DESCRIPTION>Flux variability index</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Std" ucd="stat.stdev;phot.mag" datatype="float" width="5" precision="2" unit="mmag"><!-- ucd="FIT_STDEV" -->
+      <DESCRIPTION>Standard deviation of flux values</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Stdc" ucd="stat.stdev;phot.mag" datatype="float" width="5" precision="2" unit="mmag"><!-- ucd="FIT_STDEV" -->
+      <DESCRIPTION>Corrected standard deviation</DESCRIPTION>
+    </FIELD>
+    <FIELD name="RAJ2000" ucd="pos.eq.ra;meta.main" ref="J2000" datatype="double" width="10" precision="6" unit="deg"><!-- ucd="POS_EQ_RA_MAIN" -->
+      <DESCRIPTION>Rigth ascension (J2000.0)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="DEJ2000" ucd="pos.eq.dec;meta.main" ref="J2000" datatype="double" width="10" precision="6" unit="deg"><!-- ucd="POS_EQ_DEC_MAIN" -->
+      <DESCRIPTION>Declination (J2000.0)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Simbad" ucd="meta.ref.url" datatype="char" arraysize="6*"><!-- ucd="DATA_LINK" -->
+      <DESCRIPTION>Simbad column added by the CDS</DESCRIPTION>
+<!-- ask the {\bf\fg{FireBrick}Simbad} data-base about this object -->
+
+
+<!-- No link in: \ifregexp{[^ ]}{${EPIC}}{\wSimbad{EPIC ${EPIC} }{${}}}\else{${}}\fi -->
+    </FIELD>
+<DATA><TABLEDATA>
+<TR><TD>211371946</TD><TD>15.81</TD><TD>0.93</TD><TD>29.4</TD><TD>0.5</TD><TD>2.13</TD><TD>1.35</TD><TD>1.19</TD><TD>132.819975</TD><TD>+11.189986</TD><TD>Simbad</TD></TR>
+<TR><TD>211372217</TD><TD>13.65</TD><TD>0.60</TD><TD>24.9</TD><TD>0.5</TD><TD>2.20</TD><TD>0.39</TD><TD>0.34</TD><TD>132.912123</TD><TD>+11.194156</TD><TD>Simbad</TD></TR>
+<TR><TD>211378792</TD><TD>14.70</TD><TD>0.73</TD><TD>22.6</TD><TD>0.5</TD><TD>2.29</TD><TD>0.70</TD><TD>0.63</TD><TD>132.951537</TD><TD>+11.302170</TD><TD>Simbad</TD></TR>
+<TR><TD>211381928</TD><TD>14.39</TD><TD>0.70</TD><TD>27.2</TD><TD>0.5</TD><TD>2.70</TD><TD>0.72</TD><TD>0.67</TD><TD>132.350458</TD><TD>+11.353954</TD><TD>Simbad</TD></TR>
+<TR><TD>211383622</TD><TD>15.13</TD><TD>0.97</TD><TD>19.8</TD><TD>0.5</TD><TD>3.28</TD><TD>1.23</TD><TD>1.17</TD><TD>133.106585</TD><TD>+11.382341</TD><TD>Simbad</TD></TR>
+<TR><TD>211384003</TD><TD>13.14</TD><TD>0.56</TD><TD>18.2</TD><TD>0.5</TD><TD>1.97</TD><TD>0.25</TD><TD>0.22</TD><TD>132.851196</TD><TD>+11.388131</TD><TD>Simbad</TD></TR>
+<TR><TD>211384514</TD><TD>20.10</TD><TD>1.38</TD><TD>31.8</TD><TD>0.5</TD><TD>4.62</TD><TD>11.48</TD><TD>11.20</TD><TD>133.052376</TD><TD>+11.395984</TD><TD>Simbad</TD></TR>
+<TR><TD>211386707</TD><TD>14.00</TD><TD>0.62</TD><TD>31.8</TD><TD>0.5</TD><TD>2.38</TD><TD>0.49</TD><TD>0.44</TD><TD>133.186034</TD><TD>+11.430377</TD><TD>Simbad</TD></TR>
+<TR><TD>211387140</TD><TD>12.73</TD><TD>0.52</TD><TD>38.8</TD><TD>0.5</TD><TD>2.65</TD><TD>0.28</TD><TD>0.26</TD><TD>132.426684</TD><TD>+11.437346</TD><TD>Simbad</TD></TR>
+<TR><TD>211387282</TD><TD>13.68</TD><TD>0.57</TD><TD>34.0</TD><TD>0.5</TD><TD>2.80</TD><TD>0.46</TD><TD>0.43</TD><TD>132.675424</TD><TD>+11.439851</TD><TD>Simbad</TD></TR>
+<TR><TD>211388204</TD><TD>14.96</TD><TD>0.69</TD><TD>31.7</TD><TD>0.5</TD><TD>2.71</TD><TD>1.04</TD><TD>0.96</TD><TD>132.552022</TD><TD>+11.454579</TD><TD>Simbad</TD></TR>
+<TR><TD>211389428</TD><TD>18.27</TD><TD>1.19</TD><TD>29.5</TD><TD>0.8</TD><TD>2.32</TD><TD>4.99</TD><TD>4.51</TD><TD>132.742179</TD><TD>+11.473551</TD><TD>Simbad</TD></TR>
+<TR><TD>211389716</TD><TD>13.20</TD><TD>0.55</TD><TD>31.5</TD><TD>2.4</TD><TD>2.68</TD><TD>0.35</TD><TD>0.32</TD><TD>132.496687</TD><TD>+11.478209</TD><TD>Simbad</TD></TR>
+<TR><TD>211390071</TD><TD>18.53</TD><TD>1.22</TD><TD>25.3</TD><TD>0.5</TD><TD>2.73</TD><TD>6.07</TD><TD>5.65</TD><TD>133.117228</TD><TD>+11.484420</TD><TD>Simbad</TD></TR>
+<TR><TD>211390107</TD><TD>14.65</TD><TD>0.79</TD><TD>33.6</TD><TD>0.5</TD><TD>2.66</TD><TD>0.75</TD><TD>0.69</TD><TD>133.128158</TD><TD>+11.484909</TD><TD>Simbad</TD></TR>
+<TR><TD>211391125</TD><TD>15.51</TD><TD>0.78</TD><TD>32.4</TD><TD>0.9</TD><TD>3.00</TD><TD>1.70</TD><TD>1.60</TD><TD>132.632722</TD><TD>+11.502091</TD><TD>Simbad</TD></TR>
+<TR><TD>211391208</TD><TD>20.47</TD><TD>1.34</TD><TD>26.6</TD><TD>0.8</TD><TD>2.03</TD><TD>8.52</TD><TD>7.42</TD><TD>132.623992</TD><TD>+11.503514</TD><TD>Simbad</TD></TR>
+<TR><TD>211392859</TD><TD>20.71</TD><TD>1.40</TD><TD>24.0</TD><TD>0.5</TD><TD>2.79</TD><TD>8.08</TD><TD>7.55</TD><TD>132.643239</TD><TD>+11.530637</TD><TD>Simbad</TD></TR>
+<TR><TD>211392899</TD><TD>17.19</TD><TD>1.09</TD><TD>30.8</TD><TD>0.5</TD><TD>6.66</TD><TD>10.38</TD><TD>10.26</TD><TD>133.095940</TD><TD>+11.531280</TD><TD>Simbad</TD></TR>
+<TR><TD>211393129</TD><TD>13.25</TD><TD>0.70</TD><TD>24.3</TD><TD>0.5</TD><TD>2.59</TD><TD>0.34</TD><TD>0.32</TD><TD>132.926501</TD><TD>+11.535303</TD><TD>Simbad</TD></TR>
+<TR><TD>211393422</TD><TD>19.18</TD><TD>1.29</TD><TD>28.6</TD><TD>0.5</TD><TD>2.43</TD><TD>5.11</TD><TD>4.66</TD><TD>132.805199</TD><TD>+11.540296</TD><TD>Simbad</TD></TR>
+<TR><TD>211394056</TD><TD>12.62</TD><TD>0.54</TD><TD>36.1</TD><TD>0.5</TD><TD>2.58</TD><TD>0.26</TD><TD>0.24</TD><TD>132.858071</TD><TD>+11.550008</TD><TD>Simbad</TD></TR>
+<TR><TD>211394279</TD><TD>17.93</TD><TD>1.10</TD><TD>30.5</TD><TD>2.8</TD><TD>2.17</TD><TD>6.47</TD><TD>5.74</TD><TD>132.763827</TD><TD>+11.553339</TD><TD>Simbad</TD></TR>
+<TR><TD>211394534</TD><TD>15.82</TD><TD>0.88</TD><TD>31.5</TD><TD>0.5</TD><TD>2.89</TD><TD>1.93</TD><TD>1.81</TD><TD>132.762225</TD><TD>+11.557073</TD><TD>Simbad</TD></TR>
+<TR><TD>211394542</TD><TD>19.40</TD><TD>1.28</TD><TD>28.1</TD><TD>1.3</TD><TD>1.96</TD><TD>5.55</TD><TD>4.77</TD><TD>132.674803</TD><TD>+11.557317</TD><TD>Simbad</TD></TR>
+<TR><TD>211395606</TD><TD>17.14</TD><TD>1.08</TD><TD>26.8</TD><TD>0.5</TD><TD>2.26</TD><TD>3.14</TD><TD>2.81</TD><TD>132.909719</TD><TD>+11.574363</TD><TD>Simbad</TD></TR>
+<TR><TD>211395620</TD><TD>16.16</TD><TD>0.91</TD><TD>30.4</TD><TD>0.5</TD><TD>3.67</TD><TD>3.26</TD><TD>3.14</TD><TD>132.645012</TD><TD>+11.574542</TD><TD>Simbad</TD></TR>
+<TR><TD>211395891</TD><TD>18.94</TD><TD>1.28</TD><TD>29.2</TD><TD>0.5</TD><TD>2.33</TD><TD>4.52</TD><TD>4.08</TD><TD>132.614027</TD><TD>+11.578649</TD><TD>Simbad</TD></TR>
+<TR><TD>211396422</TD><TD>12.64</TD><TD>0.56</TD><TD>32.5</TD><TD>0.7</TD><TD>2.65</TD><TD>0.26</TD><TD>0.24</TD><TD>132.874716</TD><TD>+11.586427</TD><TD>Simbad</TD></TR>
+<TR><TD>211396891</TD><TD>18.01</TD><TD>1.17</TD><TD>28.0</TD><TD>0.5</TD><TD>2.30</TD><TD>4.52</TD><TD>4.07</TD><TD>132.409058</TD><TD>+11.593155</TD><TD>Simbad</TD></TR>
+<TR><TD>211396893</TD><TD>13.39</TD><TD>0.59</TD><TD>27.2</TD><TD>0.5</TD><TD>3.51</TD><TD>0.90</TD><TD>0.86</TD><TD>132.731962</TD><TD>+11.593181</TD><TD>Simbad</TD></TR>
+<TR><TD>211397319</TD><TD>14.58</TD><TD>0.69</TD><TD>28.3</TD><TD>3.9</TD><TD>2.75</TD><TD>0.79</TD><TD>0.73</TD><TD>132.777248</TD><TD>+11.599710</TD><TD>Simbad</TD></TR>
+<TR><TD>211397501</TD><TD>16.95</TD><TD>1.12</TD><TD>12.4</TD><TD>0.5</TD><TD>4.19</TD><TD>4.60</TD><TD>4.46</TD><TD>132.834703</TD><TD>+11.602608</TD><TD>Simbad</TD></TR>
+<TR><TD>211397955</TD><TD>16.76</TD><TD>1.04</TD><TD>29.0</TD><TD>0.5</TD><TD>3.06</TD><TD>3.51</TD><TD>3.31</TD><TD>133.080397</TD><TD>+11.609540</TD><TD>Simbad</TD></TR>
+<TR><TD>211398269</TD><TD>14.58</TD><TD>0.79</TD><TD>33.5</TD><TD>0.5</TD><TD>4.59</TD><TD>1.49</TD><TD>1.45</TD><TD>132.904240</TD><TD>+11.614341</TD><TD>Simbad</TD></TR>
+<TR><TD>211398541</TD><TD>16.02</TD><TD>0.89</TD><TD>30.1</TD><TD>2.2</TD><TD>2.57</TD><TD>2.29</TD><TD>2.11</TD><TD>132.650457</TD><TD>+11.618336</TD><TD>Simbad</TD></TR>
+<TR><TD>211398612</TD><TD>18.35</TD><TD>1.26</TD><TD>28.9</TD><TD>0.5</TD><TD>3.16</TD><TD>4.97</TD><TD>4.72</TD><TD>132.584529</TD><TD>+11.619616</TD><TD>Simbad</TD></TR>
+<TR><TD>211399481</TD><TD>13.18</TD><TD>0.56</TD><TD>24.9</TD><TD>0.5</TD><TD>4.41</TD><TD>0.57</TD><TD>0.55</TD><TD>132.893529</TD><TD>+11.632610</TD><TD>Simbad</TD></TR>
+<TR><TD>211399695</TD><TD>13.90</TD><TD>0.58</TD><TD>39.9</TD><TD>1.4</TD><TD>2.27</TD><TD>0.42</TD><TD>0.38</TD><TD>132.620892</TD><TD>+11.635911</TD><TD>Simbad</TD></TR>
+<TR><TD>211399819</TD><TD>15.21</TD><TD>0.80</TD><TD>26.8</TD><TD>0.6</TD><TD>2.06</TD><TD>0.94</TD><TD>0.82</TD><TD>132.855062</TD><TD>+11.637830</TD><TD>Simbad</TD></TR>
+<TR><TD>211400215</TD><TD>13.73</TD><TD>0.57</TD><TD>27.7</TD><TD>0.5</TD><TD>2.43</TD><TD>0.42</TD><TD>0.39</TD><TD>132.860339</TD><TD>+11.643578</TD><TD>Simbad</TD></TR>
+<TR><TD>211400500</TD><TD>14.72</TD><TD>0.79</TD><TD>26.3</TD><TD>0.5</TD><TD>3.65</TD><TD>1.12</TD><TD>1.08</TD><TD>132.849450</TD><TD>+11.647812</TD><TD>Simbad</TD></TR>
+<TR><TD>211400662</TD><TD>17.96</TD><TD>1.16</TD><TD>13.5</TD><TD>0.5</TD><TD>3.63</TD><TD>7.38</TD><TD>7.09</TD><TD>133.092902</TD><TD>+11.650312</TD><TD>Simbad</TD></TR>
+<TR><TD>211401251</TD><TD>19.14</TD><TD>1.20</TD><TD>33.9</TD><TD>0.5</TD><TD>2.76</TD><TD>16.27</TD><TD>15.17</TD><TD>132.465567</TD><TD>+11.658708</TD><TD>Simbad</TD></TR>
+<TR><TD>211401403</TD><TD>13.76</TD><TD>0.58</TD><TD>22.6</TD><TD>1.2</TD><TD>2.09</TD><TD>0.35</TD><TD>0.31</TD><TD>132.836633</TD><TD>+11.661146</TD><TD>Simbad</TD></TR>
+<TR><TD>211402784</TD><TD>19.83</TD><TD>1.32</TD><TD>22.0</TD><TD>0.5</TD><TD>2.25</TD><TD>7.11</TD><TD>6.37</TD><TD>133.239908</TD><TD>+11.683971</TD><TD>Simbad</TD></TR>
+<TR><TD>211403779</TD><TD>13.84</TD><TD>0.67</TD><TD>21.2</TD><TD>0.6</TD><TD>2.95</TD><TD>0.56</TD><TD>0.53</TD><TD>133.394674</TD><TD>+11.699582</TD><TD>Simbad</TD></TR>
+<TR><TD>211403852</TD><TD>17.70</TD><TD>1.15</TD><TD>27.3</TD><TD>0.7</TD><TD>2.81</TD><TD>4.57</TD><TD>4.27</TD><TD>132.404446</TD><TD>+11.700815</TD><TD>Simbad</TD></TR>
+<TR><TD>211403975</TD><TD>14.25</TD><TD>0.67</TD><TD>28.9</TD><TD>0.9</TD><TD>3.05</TD><TD>0.71</TD><TD>0.67</TD><TD>132.503507</TD><TD>+11.702728</TD><TD>Simbad</TD></TR>
+<TR><TD>211404310</TD><TD>17.78</TD><TD>1.17</TD><TD>26.3</TD><TD>0.5</TD><TD>2.79</TD><TD>3.76</TD><TD>3.51</TD><TD>133.160798</TD><TD>+11.707605</TD><TD>Simbad</TD></TR>
+<TR><TD>211404773</TD><TD>15.08</TD><TD>0.74</TD><TD>32.4</TD><TD>0.5</TD><TD>2.00</TD><TD>0.84</TD><TD>0.73</TD><TD>132.550627</TD><TD>+11.714710</TD><TD>Simbad</TD></TR>
+<TR><TD>211405209</TD><TD>17.63</TD><TD>1.12</TD><TD>25.1</TD><TD>0.5</TD><TD>2.89</TD><TD>5.23</TD><TD>4.91</TD><TD>133.333841</TD><TD>+11.720944</TD><TD>Simbad</TD></TR>
+<TR><TD>211405671</TD><TD>18.14</TD><TD>1.15</TD><TD>25.6</TD><TD>0.5</TD><TD>3.63</TD><TD>8.11</TD><TD>7.79</TD><TD>133.195211</TD><TD>+11.727768</TD><TD>Simbad</TD></TR>
+<TR><TD>211406596</TD><TD>15.06</TD><TD>0.77</TD><TD>26.8</TD><TD>0.5</TD><TD>3.11</TD><TD>1.27</TD><TD>1.20</TD><TD>132.561039</TD><TD>+11.741568</TD><TD>Simbad</TD></TR>
+<TR><TD>211407277</TD><TD>20.35</TD><TD>1.35</TD><TD>24.7</TD><TD>0.5</TD><TD>2.50</TD><TD>8.32</TD><TD>7.63</TD><TD>132.429966</TD><TD>+11.752383</TD><TD>Simbad</TD></TR>
+<TR><TD>211408116</TD><TD>12.08</TD><TD>0.54</TD><TD>30.1</TD><TD>0.7</TD><TD>10.22</TD><TD>0.79</TD><TD>0.78</TD><TD>132.838430</TD><TD>+11.764649</TD><TD>Simbad</TD></TR>
+<TR><TD>211408874</TD><TD>19.25</TD><TD>1.25</TD><TD>23.9</TD><TD>0.5</TD><TD>2.48</TD><TD>8.89</TD><TD>8.13</TD><TD>133.216712</TD><TD>+11.776247</TD><TD>Simbad</TD></TR>
+<TR><TD>211408990</TD><TD>13.18</TD><TD>0.58</TD><TD>25.9</TD><TD>0.8</TD><TD>3.19</TD><TD>0.41</TD><TD>0.39</TD><TD>132.841882</TD><TD>+11.778052</TD><TD>Simbad</TD></TR>
+<TR><TD>211409664</TD><TD>14.37</TD><TD>0.66</TD><TD>32.7</TD><TD>0.6</TD><TD>2.74</TD><TD>0.71</TD><TD>0.66</TD><TD>132.394846</TD><TD>+11.788080</TD><TD>Simbad</TD></TR>
+<TR><TD>211409862</TD><TD>20.60</TD><TD>1.36</TD><TD>35.2</TD><TD>1.1</TD><TD>2.41</TD><TD>11.59</TD><TD>10.55</TD><TD>133.235628</TD><TD>+11.790547</TD><TD>Simbad</TD></TR>
+<TR><TD>211414403</TD><TD>20.17</TD><TD>1.34</TD><TD>23.3</TD><TD>0.5</TD><TD>2.17</TD><TD>6.28</TD><TD>5.58</TD><TD>133.119493</TD><TD>+11.857995</TD><TD>Simbad</TD></TR>
+<TR><TD>211414974</TD><TD>20.07</TD><TD>1.34</TD><TD>26.8</TD><TD>0.5</TD><TD>3.14</TD><TD>7.26</TD><TD>6.88</TD><TD>133.116460</TD><TD>+11.866789</TD><TD>Simbad</TD></TR>
+<TR><TD>211415085</TD><TD>17.19</TD><TD>1.08</TD><TD>29.0</TD><TD>0.5</TD><TD>2.01</TD><TD>2.90</TD><TD>2.52</TD><TD>132.519447</TD><TD>+11.868561</TD><TD>Simbad</TD></TR>
+<TR><TD>211415591</TD><TD>16.40</TD><TD>0.97</TD><TD>27.1</TD><TD>0.5</TD><TD>2.00</TD><TD>2.09</TD><TD>1.81</TD><TD>132.544387</TD><TD>+11.876391</TD><TD>Simbad</TD></TR>
+<TR><TD>211416648</TD><TD>17.42</TD><TD>1.14</TD><TD>32.4</TD><TD>0.6</TD><TD>2.31</TD><TD>2.66</TD><TD>2.39</TD><TD>132.619536</TD><TD>+11.891701</TD><TD>Simbad</TD></TR>
+<TR><TD>211417817</TD><TD>21.53</TD><TD>1.42</TD><TD>27.8</TD><TD>0.5</TD><TD>1.62</TD><TD>7.73</TD><TD>6.08</TD><TD>132.610678</TD><TD>+11.908991</TD><TD>Simbad</TD></TR>
+<TR><TD>211418370</TD><TD>16.22</TD><TD>0.94</TD><TD>39.2</TD><TD>0.5</TD><TD>2.65</TD><TD>2.51</TD><TD>2.32</TD><TD>133.229937</TD><TD>+11.916891</TD><TD>Simbad</TD></TR>
+<TR><TD>211418682</TD><TD>19.87</TD><TD>1.31</TD><TD>21.3</TD><TD>0.7</TD><TD>1.92</TD><TD>5.81</TD><TD>4.96</TD><TD>132.437914</TD><TD>+11.921700</TD><TD>Simbad</TD></TR>
+<TR><TD>211420394</TD><TD>13.62</TD><TD>0.61</TD><TD>26.0</TD><TD>1.0</TD><TD>2.71</TD><TD>0.42</TD><TD>0.39</TD><TD>132.500105</TD><TD>+11.946691</TD><TD>Simbad</TD></TR>
+<TR><TD>211420690</TD><TD>14.59</TD><TD>0.92</TD><TD>38.4</TD><TD>1.4</TD><TD>3.02</TD><TD>0.99</TD><TD>0.93</TD><TD>133.339284</TD><TD>+11.950621</TD><TD>Simbad</TD></TR>
+<TR><TD>211421905</TD><TD>15.21</TD><TD>0.86</TD><TD>29.0</TD><TD>0.5</TD><TD>2.16</TD><TD>0.83</TD><TD>0.73</TD><TD>133.197652</TD><TD>+11.969059</TD><TD>Simbad</TD></TR>
+<TR><TD>211422676</TD><TD>13.41</TD><TD>0.59</TD><TD>22.2</TD><TD>0.5</TD><TD>2.78</TD><TD>0.39</TD><TD>0.36</TD><TD>132.449110</TD><TD>+11.980715</TD><TD>Simbad</TD></TR>
+<TR><TD>211422833</TD><TD>13.81</TD><TD>0.55</TD><TD>31.2</TD><TD>1.1</TD><TD>1.83</TD><TD>0.31</TD><TD>0.26</TD><TD>132.255818</TD><TD>+11.982974</TD><TD>Simbad</TD></TR>
+<TR><TD>211423302</TD><TD>15.48</TD><TD>0.88</TD><TD>29.0</TD><TD>0.5</TD><TD>2.08</TD><TD>0.98</TD><TD>0.86</TD><TD>133.108914</TD><TD>+11.989965</TD><TD>Simbad</TD></TR>
+<TR><TD>211424980</TD><TD>16.75</TD><TD>1.16</TD><TD>15.6</TD><TD>0.5</TD><TD>5.93</TD><TD>5.03</TD><TD>4.96</TD><TD>132.467915</TD><TD>+12.015049</TD><TD>Simbad</TD></TR>
+<TR><TD>211425363</TD><TD>16.92</TD><TD>1.13</TD><TD>30.7</TD><TD>0.5</TD><TD>2.24</TD><TD>2.44</TD><TD>2.18</TD><TD>133.220152</TD><TD>+12.021009</TD><TD>Simbad</TD></TR>
+<TR><TD>211425595</TD><TD>19.47</TD><TD>1.29</TD><TD>31.2</TD><TD>0.5</TD><TD>2.09</TD><TD>4.65</TD><TD>4.09</TD><TD>133.111386</TD><TD>+12.024726</TD><TD>Simbad</TD></TR>
+<TR><TD>211425760</TD><TD>17.57</TD><TD>1.20</TD><TD>31.4</TD><TD>2.5</TD><TD>2.35</TD><TD>2.43</TD><TD>2.20</TD><TD>133.054696</TD><TD>+12.027169</TD><TD>Simbad</TD></TR>
+<TR><TD>211426242</TD><TD>14.98</TD><TD>0.77</TD><TD>32.5</TD><TD>2.6</TD><TD>1.96</TD><TD>0.87</TD><TD>0.75</TD><TD>132.193841</TD><TD>+12.034628</TD><TD>Simbad</TD></TR>
+<TR><TD>211427268</TD><TD>13.82</TD><TD>0.65</TD><TD>29.8</TD><TD>0.5</TD><TD>3.53</TD><TD>0.61</TD><TD>0.59</TD><TD>132.787764</TD><TD>+12.050613</TD><TD>Simbad</TD></TR>
+<TR><TD>211427431</TD><TD>20.92</TD><TD>1.38</TD><TD>23.5</TD><TD>0.5</TD><TD>1.95</TD><TD>7.73</TD><TD>6.64</TD><TD>133.067201</TD><TD>+12.052854</TD><TD>Simbad</TD></TR>
+<TR><TD>211427666</TD><TD>18.06</TD><TD>1.18</TD><TD>28.8</TD><TD>0.5</TD><TD>2.68</TD><TD>5.20</TD><TD>4.82</TD><TD>133.124639</TD><TD>+12.056957</TD><TD>Simbad</TD></TR>
+<TR><TD>211428172</TD><TD>14.24</TD><TD>0.65</TD><TD>33.1</TD><TD>0.5</TD><TD>2.50</TD><TD>0.58</TD><TD>0.53</TD><TD>133.006520</TD><TD>+12.065056</TD><TD>Simbad</TD></TR>
+<TR><TD>211428762</TD><TD>15.41</TD><TD>0.84</TD><TD>31.0</TD><TD>0.5</TD><TD>3.11</TD><TD>1.60</TD><TD>1.51</TD><TD>132.917821</TD><TD>+12.073563</TD><TD>Simbad</TD></TR>
+<TR><TD>211428837</TD><TD>13.25</TD><TD>0.58</TD><TD>21.9</TD><TD>0.5</TD><TD>2.51</TD><TD>0.34</TD><TD>0.31</TD><TD>133.142270</TD><TD>+12.074767</TD><TD>Simbad</TD></TR>
+<TR><TD>211429903</TD><TD>17.99</TD><TD>1.12</TD><TD>30.9</TD><TD>0.8</TD><TD>2.24</TD><TD>5.93</TD><TD>5.31</TD><TD>133.160769</TD><TD>+12.091211</TD><TD>Simbad</TD></TR>
+<TR><TD>211430012</TD><TD>14.01</TD><TD>0.60</TD><TD>29.0</TD><TD>0.5</TD><TD>2.24</TD><TD>0.44</TD><TD>0.39</TD><TD>132.738340</TD><TD>+12.093447</TD><TD>Simbad</TD></TR>
+<TR><TD>211430257</TD><TD>16.31</TD><TD>0.98</TD><TD>28.9</TD><TD>1.0</TD><TD>1.87</TD><TD>1.75</TD><TD>1.48</TD><TD>132.579282</TD><TD>+12.097342</TD><TD>Simbad</TD></TR>
+<TR><TD>211430274</TD><TD>15.74</TD><TD>0.92</TD><TD>29.2</TD><TD>2.6</TD><TD>3.01</TD><TD>1.77</TD><TD>1.67</TD><TD>132.915654</TD><TD>+12.097722</TD><TD>Simbad</TD></TR>
+<TR><TD>211430648</TD><TD>15.56</TD><TD>0.86</TD><TD>32.6</TD><TD>0.8</TD><TD>3.29</TD><TD>1.94</TD><TD>1.85</TD><TD>133.093698</TD><TD>+12.103947</TD><TD>Simbad</TD></TR>
+<TR><TD>211430866</TD><TD>12.58</TD><TD>0.55</TD><TD>32.8</TD><TD>0.5</TD><TD>3.48</TD><TD>0.33</TD><TD>0.32</TD><TD>133.136292</TD><TD>+12.106943</TD><TD>Simbad</TD></TR>
+<TR><TD>211431269</TD><TD>16.28</TD><TD>0.99</TD><TD>30.7</TD><TD>0.5</TD><TD>2.02</TD><TD>1.71</TD><TD>1.48</TD><TD>132.930700</TD><TD>+12.113536</TD><TD>Simbad</TD></TR>
+<TR><TD>211432745</TD><TD>13.81</TD><TD>0.64</TD><TD>33.1</TD><TD>0.8</TD><TD>2.17</TD><TD>0.38</TD><TD>0.34</TD><TD>132.937203</TD><TD>+12.136446</TD><TD>Simbad</TD></TR>
+<TR><TD>211432962</TD><TD>13.26</TD><TD>0.60</TD><TD>12.1</TD><TD>0.5</TD><TD>3.10</TD><TD>0.41</TD><TD>0.39</TD><TD>132.768289</TD><TD>+12.140158</TD><TD>Simbad</TD></TR>
+<TR><TD>211433352</TD><TD>18.20</TD><TD>1.18</TD><TD>13.7</TD><TD>0.5</TD><TD>2.07</TD><TD>4.29</TD><TD>3.75</TD><TD>132.786119</TD><TD>+12.145673</TD><TD>Simbad</TD></TR>
+<TR><TD>211434467</TD><TD>16.48</TD><TD>0.95</TD><TD>28.9</TD><TD>2.9</TD><TD>2.11</TD><TD>2.54</TD><TD>2.24</TD><TD>132.753150</TD><TD>+12.162341</TD><TD>Simbad</TD></TR>
+<TR><TD>211435506</TD><TD>14.63</TD><TD>0.87</TD><TD>27.1</TD><TD>0.5</TD><TD>3.30</TD><TD>0.96</TD><TD>0.91</TD><TD>132.689917</TD><TD>+12.177717</TD><TD>Simbad</TD></TR>
+<TR><TD>211435897</TD><TD>19.01</TD><TD>1.26</TD><TD>23.8</TD><TD>0.5</TD><TD>2.01</TD><TD>5.42</TD><TD>4.70</TD><TD>132.849519</TD><TD>+12.184072</TD><TD>Simbad</TD></TR>
+</TABLEDATA></DATA>
+</TABLE>
+<INFO name="matches" value="98">matching records</INFO>
+
+<INFO name="Warning" value="No center provided++++"/>
+<INFO name="Warning" value="+++No column for LINK to a row in table: J/MNRAS/463/3513/table1"/>
+</RESOURCE>
+</VOTABLE>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+ <DESCRIPTION>
+   VizieR Astronomical Server vizier.u-strasbg.fr
+    Date: 2020-01-16T10:33:46 [V1.99+ (14-Oct-2013)]
+   Explanations and Statistics of UCDs:			See LINK below
+   In case of problem, please report to:	cds-question@unistra.fr
+   In this version, NULL integer columns are written as an empty string
+   &lt;TD&gt;&lt;/TD&gt;, explicitely possible from VOTable-1.3
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+<INFO ID="VERSION" name="votable-version" value="1.99+ (14-Oct-2013)"/>
+<INFO ID="Ref" name="-ref" value="VIZ5e203ac0345a"/>
+<INFO ID="MaxTuples" name="-out.max" value="unlimited"/>
+<INFO name="queryParameters" value="25">
+-oc.form=dec
+-out.max=unlimited
+-out.add=_r
+-out.add=_RAJ,_DEJ
+-sort=_r
+-order=I
+-out.src=J/AJ/158/77/table2
+-nav=cat:J/AJ/158/77&amp;tab:{J/AJ/158/77/table2}&amp;key:source=J/AJ/158/77/table2&amp;HTTPPRM:&amp;&amp;-ref=VIZ5e203ac0345a&amp;-out.max=50&amp;-out.form=HTML Table&amp;-out.add=_r&amp;-out.add=_RAJ,_DEJ&amp;-sort=_r&amp;-oc.form=sexa&amp;-c.eq=J2000&amp;-c.r=  2&amp;-c.u=arcmin&amp;-c.geom=r&amp;-order=I&amp;-out=Seq&amp;-out=f_Seq&amp;-out=Source&amp;-out=RA_ICRS&amp;-out=DE_ICRS&amp;-out=GBP-GRP&amp;-out=Teff&amp;-out=Gmag&amp;-out=GMag&amp;-out=Prot&amp;-out=Note&amp;-out=Simbad&amp;-ignore=Simbad=*&amp;Simbad=Simbad&amp;-file=.&amp;-meta.ucd=2&amp;-meta=1&amp;-meta.foot=1&amp;-usenav=1&amp;-bmark=POST&amp;-out.src=J/AJ/158/77/table2
+-c.eq=J2000
+-c.r=  2
+-c.u=arcmin
+-c.geom=r
+-source=J/AJ/158/77/table2
+-out=Seq
+-out=f_Seq
+-out=Source
+-out=RA_ICRS
+-out=DE_ICRS
+-out=GBP-GRP
+-out=Teff
+-out=Gmag
+-out=GMag
+-out=Prot
+-out=Note
+-out=Simbad
+</INFO>
+
+<!--
+Execution Reports
+ -->
+
+<RESOURCE ID="yCat_51580077" name="J/AJ/158/77">
+  <DESCRIPTION>Candidates and members of the Pisces-Eridanus stream (Curtis+, 2019)</DESCRIPTION>
+  <COOSYS ID="H" system="ICRS"/>
+  <COOSYS ID="J2000" system="eq_FK5" equinox="J2000"/>
+  <TABLE ID="J_AJ_158_77_table2" name="J/AJ/158/77/table2">
+    <DESCRIPTION>Rotation periods for Meingast et al. (2019, J/A+A/622/L13) members of the Psc-Eri stream</DESCRIPTION>
+    <!-- Definitions of GROUPs and FIELDs -->
+
+<!-- +++No column could be found to attach a LINK in table: J/AJ/158/77/table2 -->
+    <FIELD name="_RAJ2000" ucd="pos.eq.ra" ref="J2000" datatype="double" width="10" precision="6" unit="deg"><!-- ucd="POS_EQ_RA" -->
+      <DESCRIPTION>Right ascension (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="_DEJ2000" ucd="pos.eq.dec" ref="J2000" datatype="double" width="10" precision="6" unit="deg"><!-- ucd="POS_EQ_DEC" -->
+      <DESCRIPTION>Declination (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Seq" ucd="meta.record" datatype="short" width="3"><!-- ucd="ID_NUMBER" -->
+      <DESCRIPTION>[1/101] Sequential running number, sorted by G_BP_-G_RP_</DESCRIPTION>
+    </FIELD>
+    <FIELD name="f_Seq" ucd="meta.code" datatype="char" arraysize="1"><!-- ucd="CODE_MISC" -->
+      <DESCRIPTION>[a] Source flag (1)</DESCRIPTION>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR?-6N&amp;-info=XML&amp;-out.add=.&amp;&amp;lt;&amp;quot;Note&amp;quot;&amp;catid=51580077&amp;notid=1&amp;-out.emph=${f_Seq}"/>
+    </FIELD>
+    <FIELD name="Source" ucd="meta.id;meta.main" datatype="long" width="19"><!-- ucd="ID_MAIN" -->
+      <DESCRIPTION>Gaia DR2 identifier</DESCRIPTION>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR-4?-info=XML&amp;-out.add=.&amp;-source=I/345/gaia2&amp;Source=${Source}"/>
+    </FIELD>
+    <FIELD name="RA_ICRS" ucd="pos.eq.ra;meta.main" ref="H" datatype="char" arraysize="10" unit="&quot;h:m:s&quot;"><!-- ucd="POS_EQ_RA_MAIN" -->
+      <DESCRIPTION>Hour of Right Ascension (ICRS) (G1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="DE_ICRS" ucd="pos.eq.dec;meta.main" ref="H" datatype="char" arraysize="11" unit="&quot;d:m:s&quot;"><!-- ucd="POS_EQ_DEC_MAIN" -->
+      <DESCRIPTION>Degree of Declination (ICRS) (G1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="GBP-GRP" ucd="phot.color;em.opt.B;em.opt.R" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_CI_B-R" -->
+      <DESCRIPTION>[0.432/1.852] Gaia DR2 G_BP_-G_RP_ color (G1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Teff" ucd="phys.temperature.effective" datatype="short" width="4" unit="K"><!-- ucd="PHYS_TEMP_EFFEC" -->
+      <DESCRIPTION>[3956/7187] Surface effective temperature (G1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Gmag" ucd="phot.mag;em.opt" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_MAG_OPTICAL" -->
+      <DESCRIPTION>[8.562/13.375] Gaia DR2 G band magnitude (G1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="GMag" ucd="phys.magAbs" datatype="float" width="6" precision="3" unit="mag"><!-- ucd="PHOT_ABS-MAG_BAND" -->
+      <DESCRIPTION>[2.802/8.099] Absolute G mag, M_G_=G-5*log_10_(100/{pi}) (G1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Prot" ucd="time.period" datatype="float" width="5" precision="2" unit="d"><!-- ucd="TIME_PERIOD" -->
+      <DESCRIPTION>[0.45/12.22] Rotation period derived from TESS full-frame images (FFI) data</DESCRIPTION>
+    </FIELD>
+    <FIELD name="Note" ucd="meta.note" datatype="char" arraysize="5"><!-- ucd="NOTE" -->
+      <DESCRIPTION>Note (2)</DESCRIPTION>
+      <LINK href="http://vizier.u-strasbg.fr/viz-bin/VizieR?-6N&amp;-info=XML&amp;-out.add=.&amp;&amp;lt;&amp;quot;Note&amp;quot;&amp;catid=51580077&amp;notid=2&amp;-out.emph=${Note}"/>
+    </FIELD>
+    <FIELD name="Simbad" ucd="meta.ref.url" datatype="char" arraysize="6*"><!-- ucd="DATA_LINK" -->
+      <DESCRIPTION>Simbad column added by the CDS</DESCRIPTION>
+<!-- ask the {\bf\fg{FireBrick}Simbad} data-base about this object -->
+
+
+<!-- No link in: \ifregexp{[^ ]}{${Source}}{\wSimbad{Gaia DR2 ${Source} }{Gaia DR2 ${Source} }}\else{${}}\fi -->
+    </FIELD>
+<DATA><TABLEDATA>
+<TR><TD>065.631250</TD><TD>-7.550889</TD><TD>1</TD><TD></TD><TD>3198972700981234048</TD><TD>04 22 31.5</TD><TD>-07 33 03.2</TD><TD>0.432</TD><TD>7187</TD><TD>8.903</TD><TD>2.802</TD><TD>0.52</TD><TD>Warm</TD><TD>Simbad</TD></TR>
+<TR><TD>047.697083</TD><TD>-6.574944</TD><TD>2</TD><TD></TD><TD>5181474045115843072</TD><TD>03 10 47.3</TD><TD>-06 34 29.8</TD><TD>0.446</TD><TD>7161</TD><TD>8.562</TD><TD>2.954</TD><TD>0.87</TD><TD>Warm</TD><TD>Simbad</TD></TR>
+<TR><TD>035.094167</TD><TD>+5.883083</TD><TD>3</TD><TD></TD><TD>2516948215250061568</TD><TD>02 20 22.6</TD><TD>+05 52 59.1</TD><TD>0.597</TD><TD>6622</TD><TD>9.183</TD><TD>3.534</TD><TD>0.82</TD><TD>Warm</TD><TD>Simbad</TD></TR>
+<TR><TD>060.564167</TD><TD>-5.896722</TD><TD>4</TD><TD></TD><TD>3245408684793798528</TD><TD>04 02 15.4</TD><TD>-05 53 48.2</TD><TD>0.604</TD><TD>6573</TD><TD>9.425</TD><TD>3.513</TD><TD>0.56</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>339.129583</TD><TD>-21.585000</TD><TD>5</TD><TD></TD><TD>6628071944405827712</TD><TD>22 36 31.1</TD><TD>-21 35 06.0</TD><TD>0.647</TD><TD>6320</TD><TD>8.967</TD><TD>3.835</TD><TD>0.94</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>080.716250</TD><TD>-11.796611</TD><TD>6</TD><TD></TD><TD>2988966044497883392</TD><TD>05 22 51.9</TD><TD>-11 47 47.8</TD><TD>0.648</TD><TD>6487</TD><TD>10.345</TD><TD>3.688</TD><TD>0.79</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>023.143333</TD><TD>-12.852694</TD><TD>7</TD><TD></TD><TD>2456987757379368064</TD><TD>01 32 34.4</TD><TD>-12 51 09.7</TD><TD>0.654</TD><TD>6259</TD><TD>9.043</TD><TD>3.865</TD><TD>1.24</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>070.760833</TD><TD>-7.898472</TD><TD>8</TD><TD></TD><TD>3186195241994234880</TD><TD>04 43 02.6</TD><TD>-07 53 54.5</TD><TD>0.655</TD><TD>6206</TD><TD>9.999</TD><TD>3.766</TD><TD>1.71</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>075.646667</TD><TD>-12.522333</TD><TD>9</TD><TD></TD><TD>2988096919213031808</TD><TD>05 02 35.2</TD><TD>-12 31 20.4</TD><TD>0.661</TD><TD>6387</TD><TD>10.280</TD><TD>3.869</TD><TD>0.91</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>076.788333</TD><TD>-13.568806</TD><TD>10</TD><TD></TD><TD>2987729922847457280</TD><TD>05 07 09.2</TD><TD>-13 34 07.7</TD><TD>0.668</TD><TD>6240</TD><TD>10.156</TD><TD>3.896</TD><TD>0.97</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>067.340000</TD><TD>-2.829750</TD><TD>11</TD><TD></TD><TD>3204844780267292288</TD><TD>04 29 21.6</TD><TD>-02 49 47.1</TD><TD>0.673</TD><TD>6173</TD><TD>9.760</TD><TD>4.020</TD><TD>1.97</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>350.342917</TD><TD>-17.516250</TD><TD>12</TD><TD></TD><TD>2405544971274027904</TD><TD>23 21 22.3</TD><TD>-17 30 58.5</TD><TD>0.680</TD><TD>6139</TD><TD>9.222</TD><TD>4.024</TD><TD>1.44</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>060.370000</TD><TD>-11.323806</TD><TD>13</TD><TD></TD><TD>3190206672727634816</TD><TD>04 01 28.8</TD><TD>-11 19 25.7</TD><TD>0.682</TD><TD>6324</TD><TD>9.920</TD><TD>4.059</TD><TD>2.26</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>049.595000</TD><TD>-4.491389</TD><TD>14</TD><TD></TD><TD>5182223980765557248</TD><TD>03 18 22.8</TD><TD>-04 29 29.0</TD><TD>0.687</TD><TD>6105</TD><TD>9.788</TD><TD>4.054</TD><TD>1.29</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>077.625417</TD><TD>-16.134472</TD><TD>15</TD><TD></TD><TD>2982998926174605824</TD><TD>05 10 30.1</TD><TD>-16 08 04.1</TD><TD>0.691</TD><TD>6081</TD><TD>10.646</TD><TD>3.970</TD><TD>1.70</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>034.517500</TD><TD>-3.837333</TD><TD>16</TD><TD></TD><TD>2492898356897645184</TD><TD>02 18 04.2</TD><TD>-03 50 14.4</TD><TD>0.700</TD><TD>6075</TD><TD>9.453</TD><TD>4.126</TD><TD>2.67</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>060.853750</TD><TD>-0.779222</TD><TD>17</TD><TD></TD><TD>3256702490277205376</TD><TD>04 03 24.9</TD><TD>-00 46 45.2</TD><TD>0.701</TD><TD>6033</TD><TD>9.928</TD><TD>4.180</TD><TD>3.08</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>048.828333</TD><TD>-17.943444</TD><TD>18</TD><TD></TD><TD>5104477754084350464</TD><TD>03 15 18.8</TD><TD>-17 56 36.4</TD><TD>0.731</TD><TD>5993</TD><TD>9.606</TD><TD>4.279</TD><TD>2.55</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>030.545417</TD><TD>-16.567611</TD><TD>19</TD><TD></TD><TD>5147686052794315904</TD><TD>02 02 10.9</TD><TD>-16 34 03.4</TD><TD>0.746</TD><TD>5864</TD><TD>9.643</TD><TD>4.410</TD><TD>2.53</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>068.007500</TD><TD>-8.887139</TD><TD>20</TD><TD></TD><TD>3197608241410937216</TD><TD>04 32 01.8</TD><TD>-08 53 13.7</TD><TD>0.758</TD><TD>6418</TD><TD>10.494</TD><TD>4.476</TD><TD>2.85</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>034.682917</TD><TD>-4.015556</TD><TD>21</TD><TD></TD><TD>2489889607752127360</TD><TD>02 18 43.9</TD><TD>-04 00 56.0</TD><TD>0.759</TD><TD>6016</TD><TD>10.019</TD><TD>4.390</TD><TD>2.38</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>013.556250</TD><TD>-22.885500</TD><TD>22</TD><TD></TD><TD>2346216668164370432</TD><TD>00 54 13.5</TD><TD>-22 53 07.8</TD><TD>0.764</TD><TD>5852</TD><TD>9.441</TD><TD>4.452</TD><TD>3.10</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>041.644167</TD><TD>-18.904861</TD><TD>23</TD><TD></TD><TD>5129126330877050240</TD><TD>02 46 34.6</TD><TD>-18 54 17.5</TD><TD>0.766</TD><TD>5926</TD><TD>9.784</TD><TD>4.520</TD><TD>3.00</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>039.652083</TD><TD>-25.252111</TD><TD>24</TD><TD></TD><TD>5070969209513725568</TD><TD>02 38 36.5</TD><TD>-25 15 07.6</TD><TD>0.775</TD><TD>5852</TD><TD>9.435</TD><TD>4.462</TD><TD>5.69</TD><TD>Slow</TD><TD>Simbad</TD></TR>
+<TR><TD>033.943333</TD><TD>-2.609028</TD><TD>25</TD><TD></TD><TD>2493286445846897664</TD><TD>02 15 46.4</TD><TD>-02 36 32.5</TD><TD>0.821</TD><TD>5761</TD><TD>9.916</TD><TD>4.813</TD><TD>3.84</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>068.480833</TD><TD>-8.324417</TD><TD>26</TD><TD></TD><TD>3197753548744455168</TD><TD>04 33 55.4</TD><TD>-08 19 27.9</TD><TD>0.827</TD><TD>5648</TD><TD>10.892</TD><TD>4.799</TD><TD>3.96</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>033.696667</TD><TD>+2.239000</TD><TD>27</TD><TD></TD><TD>2513568007268649728</TD><TD>02 14 47.2</TD><TD>+02 14 20.4</TD><TD>0.865</TD><TD>5617</TD><TD>10.473</TD><TD>5.025</TD><TD>4.30</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>047.265417</TD><TD>-7.065500</TD><TD>28</TD><TD></TD><TD>5179904664065847040</TD><TD>03 09 03.7</TD><TD>-07 03 55.8</TD><TD>0.873</TD><TD>5621</TD><TD>10.382</TD><TD>4.979</TD><TD>4.78</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>052.376250</TD><TD>-7.170500</TD><TD>29</TD><TD></TD><TD>5168681021169216896</TD><TD>03 29 30.3</TD><TD>-07 10 13.8</TD><TD>0.895</TD><TD>5478</TD><TD>10.827</TD><TD>5.204</TD><TD>5.32</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>061.894583</TD><TD>-2.075889</TD><TD>30</TD><TD></TD><TD>3253302456727341696</TD><TD>04 07 34.7</TD><TD>-02 04 33.2</TD><TD>0.901</TD><TD>5519</TD><TD>10.982</TD><TD>5.112</TD><TD>4.83</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>065.396667</TD><TD>-14.024972</TD><TD>31</TD><TD></TD><TD>3176016268285396864</TD><TD>04 21 35.2</TD><TD>-14 01 29.9</TD><TD>0.902</TD><TD>5455</TD><TD>11.335</TD><TD>5.263</TD><TD>5.11</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>018.882083</TD><TD>-2.846222</TD><TD>32</TD><TD></TD><TD>2531732317316926336</TD><TD>01 15 31.7</TD><TD>-02 50 46.4</TD><TD>0.903</TD><TD>5567</TD><TD>10.841</TD><TD>5.210</TD><TD>4.87</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>041.255000</TD><TD>-2.429528</TD><TD>33</TD><TD></TD><TD>2495781619982992640</TD><TD>02 45 01.2</TD><TD>-02 25 46.3</TD><TD>0.921</TD><TD>5782</TD><TD>10.780</TD><TD>5.304</TD><TD>5.00</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>082.368750</TD><TD>-19.299667</TD><TD>34</TD><TD></TD><TD>2968825259219765120</TD><TD>05 29 28.5</TD><TD>-19 17 58.8</TD><TD>0.924</TD><TD>5635</TD><TD>12.032</TD><TD>5.264</TD><TD>5.21</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>062.966250</TD><TD>-37.939722</TD><TD>35</TD><TD>a</TD><TD>4844691297067063424</TD><TD>04 11 51.9</TD><TD>-37 56 23.0</TD><TD>0.927</TD><TD>5530</TD><TD>10.750</TD><TD>5.280</TD><TD>5.02</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>037.745000</TD><TD>-3.051361</TD><TD>36</TD><TD></TD><TD>2496200774431287424</TD><TD>02 30 58.8</TD><TD>-03 03 04.9</TD><TD>0.928</TD><TD>5448</TD><TD>10.415</TD><TD>5.328</TD><TD>5.45</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>009.550833</TD><TD>-43.006889</TD><TD>37</TD><TD></TD><TD>4980826504625538048</TD><TD>00 38 12.2</TD><TD>-43 00 24.8</TD><TD>0.935</TD><TD>5580</TD><TD>10.317</TD><TD>5.401</TD><TD>5.24</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>056.984583</TD><TD>-41.940250</TD><TD>38</TD><TD></TD><TD>4842810376267950464</TD><TD>03 47 56.3</TD><TD>-41 56 24.9</TD><TD>0.936</TD><TD>5355</TD><TD>10.762</TD><TD>5.383</TD><TD>5.70</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>066.612917</TD><TD>-7.661028</TD><TD>39</TD><TD></TD><TD>3198734278756825856</TD><TD>04 26 27.1</TD><TD>-07 39 39.7</TD><TD>0.966</TD><TD>5310</TD><TD>11.469</TD><TD>5.445</TD><TD>8.35</TD><TD>Slow</TD><TD>Simbad</TD></TR>
+<TR><TD>045.195417</TD><TD>-37.133750</TD><TD>40</TD><TD></TD><TD>5045955865443216640</TD><TD>03 00 46.9</TD><TD>-37 08 01.5</TD><TD>0.976</TD><TD>5434</TD><TD>10.323</TD><TD>5.363</TD><TD>3.90</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>059.266667</TD><TD>-10.233583</TD><TD>41</TD><TD></TD><TD>3193528950192619648</TD><TD>03 57 04.0</TD><TD>-10 14 00.9</TD><TD>0.994</TD><TD>5270</TD><TD>11.297</TD><TD>5.534</TD><TD>5.54</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>071.551250</TD><TD>-7.540111</TD><TD>42</TD><TD></TD><TD>3187547465200970368</TD><TD>04 46 12.3</TD><TD>-07 32 24.4</TD><TD>0.997</TD><TD>5425</TD><TD>11.733</TD><TD>5.519</TD><TD>5.43</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>058.504167</TD><TD>-6.237389</TD><TD>43</TD><TD></TD><TD>3245140743257978496</TD><TD>03 54 01.0</TD><TD>-06 14 14.6</TD><TD>1.017</TD><TD>5344</TD><TD>11.146</TD><TD>5.434</TD><TD>5.66</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>065.977500</TD><TD>-2.562056</TD><TD>44</TD><TD></TD><TD>3205573756476323328</TD><TD>04 23 54.6</TD><TD>-02 33 43.4</TD><TD>1.029</TD><TD>5134</TD><TD>11.604</TD><TD>5.634</TD><TD>6.05</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>068.678333</TD><TD>-8.955139</TD><TD>45</TD><TD></TD><TD>3185678437170300800</TD><TD>04 34 42.8</TD><TD>-08 57 18.5</TD><TD>1.052</TD><TD>5122</TD><TD>11.899</TD><TD>5.796</TD><TD>0.55</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>049.515833</TD><TD>-19.737278</TD><TD>46</TD><TD></TD><TD>5103353606523787008</TD><TD>03 18 03.8</TD><TD>-19 44 14.2</TD><TD>1.058</TD><TD>5077</TD><TD>10.473</TD><TD>5.227</TD><TD>1.26</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>071.992500</TD><TD>-7.823667</TD><TD>47</TD><TD></TD><TD>3187477818011309568</TD><TD>04 47 58.2</TD><TD>-07 49 25.2</TD><TD>1.059</TD><TD>5205</TD><TD>11.994</TD><TD>5.818</TD><TD>7.02</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>081.625000</TD><TD>-12.022528</TD><TD>48</TD><TD></TD><TD>3009905594911137664</TD><TD>05 26 30.0</TD><TD>-12 01 21.1</TD><TD>1.073</TD><TD>5352</TD><TD>12.576</TD><TD>5.905</TD><TD>6.50</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>059.396250</TD><TD>-24.478361</TD><TD>49</TD><TD></TD><TD>5083255496041631616</TD><TD>03 57 35.1</TD><TD>-24 28 42.1</TD><TD>1.077</TD><TD>5078</TD><TD>11.131</TD><TD>5.885</TD><TD>12.22</TD><TD>Slow</TD><TD>Simbad</TD></TR>
+<TR><TD>057.159583</TD><TD>-6.697944</TD><TD>50</TD><TD></TD><TD>3243665031151732864</TD><TD>03 48 38.3</TD><TD>-06 41 52.6</TD><TD>1.082</TD><TD>5063</TD><TD>11.460</TD><TD>5.953</TD><TD>6.84</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>065.471667</TD><TD>-8.721139</TD><TD>51</TD><TD></TD><TD>3192643431015406464</TD><TD>04 21 53.2</TD><TD>-08 43 16.1</TD><TD>1.088</TD><TD>5003</TD><TD>11.752</TD><TD>5.873</TD><TD>6.84</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>018.426667</TD><TD>-31.194333</TD><TD>52</TD><TD></TD><TD>5029398079322118912</TD><TD>01 13 42.4</TD><TD>-31 11 39.6</TD><TD>1.088</TD><TD>5003</TD><TD>10.804</TD><TD>5.959</TD><TD>6.64</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>339.972917</TD><TD>-16.606472</TD><TD>53</TD><TD></TD><TD>2596395760081700608</TD><TD>22 39 53.5</TD><TD>-16 36 23.3</TD><TD>1.097</TD><TD>5065</TD><TD>11.508</TD><TD>5.994</TD><TD>6.97</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>074.510417</TD><TD>-17.174361</TD><TD>54</TD><TD></TD><TD>2979827384884386176</TD><TD>04 58 02.5</TD><TD>-17 10 27.7</TD><TD>1.113</TD><TD>5032</TD><TD>12.317</TD><TD>6.033</TD><TD>6.34</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>061.500833</TD><TD>-6.897222</TD><TD>55</TD><TD></TD><TD>3196687812738993152</TD><TD>04 06 00.2</TD><TD>-06 53 50.0</TD><TD>1.128</TD><TD>4982</TD><TD>11.842</TD><TD>6.073</TD><TD>7.02</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>032.592917</TD><TD>-3.849083</TD><TD>56</TD><TD></TD><TD>2491594263092190464</TD><TD>02 10 22.3</TD><TD>-03 50 56.7</TD><TD>1.136</TD><TD>4944</TD><TD>11.533</TD><TD>6.153</TD><TD>2.26</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>339.755833</TD><TD>-18.882139</TD><TD>57</TD><TD></TD><TD>2402197409339616768</TD><TD>22 39 01.4</TD><TD>-18 52 55.7</TD><TD>1.142</TD><TD>4921</TD><TD>11.219</TD><TD>6.155</TD><TD>7.80</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>081.310833</TD><TD>-10.430389</TD><TD>58</TD><TD></TD><TD>3013355999838366336</TD><TD>05 25 14.6</TD><TD>-10 25 49.4</TD><TD>1.159</TD><TD>4908</TD><TD>12.806</TD><TD>6.185</TD><TD>7.11</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>063.191667</TD><TD>-16.324750</TD><TD>59</TD><TD></TD><TD>5096891158212909312</TD><TD>04 12 46.0</TD><TD>-16 19 29.1</TD><TD>1.181</TD><TD>4907</TD><TD>11.994</TD><TD>6.187</TD><TD>3.68</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>067.120417</TD><TD>-33.895861</TD><TD>60</TD><TD></TD><TD>4871041608622321664</TD><TD>04 28 28.9</TD><TD>-33 53 45.1</TD><TD>1.193</TD><TD>4924</TD><TD>11.630</TD><TD>6.037</TD><TD>6.50</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>046.308750</TD><TD>+6.148194</TD><TD>61</TD><TD></TD><TD>7324465427953664</TD><TD>03 05 14.1</TD><TD>+06 08 53.5</TD><TD>1.197</TD><TD>4947</TD><TD>12.043</TD><TD>6.247</TD><TD>4.40</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>059.727917</TD><TD>-17.098111</TD><TD>62</TD><TD></TD><TD>5097262136011410944</TD><TD>03 58 54.7</TD><TD>-17 05 53.2</TD><TD>1.199</TD><TD>4899</TD><TD>11.649</TD><TD>6.311</TD><TD>7.58</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>357.479583</TD><TD>-15.728333</TD><TD>63</TD><TD></TD><TD>2418664520110763520</TD><TD>23 49 55.1</TD><TD>-15 43 42.0</TD><TD>1.213</TD><TD>4917</TD><TD>11.607</TD><TD>6.396</TD><TD>2.94</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>039.795417</TD><TD>-5.539556</TD><TD>64</TD><TD></TD><TD>5179037454333642240</TD><TD>02 39 10.9</TD><TD>-05 32 22.4</TD><TD>1.215</TD><TD>4859</TD><TD>11.765</TD><TD>6.373</TD><TD>6.42</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>021.102917</TD><TD>-3.277500</TD><TD>65</TD><TD></TD><TD>2484875735945832704</TD><TD>01 24 24.7</TD><TD>-03 16 39.0</TD><TD>1.222</TD><TD>4842</TD><TD>11.791</TD><TD>6.398</TD><TD>8.40</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>355.156250</TD><TD>-18.193861</TD><TD>66</TD><TD></TD><TD>2393862836322877952</TD><TD>23 40 37.5</TD><TD>-18 11 37.9</TD><TD>1.239</TD><TD>4734</TD><TD>11.485</TD><TD>6.472</TD><TD>7.70</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>337.807917</TD><TD>-17.081222</TD><TD>67</TD><TD></TD><TD>2594993646533642496</TD><TD>22 31 13.9</TD><TD>-17 04 52.4</TD><TD>1.242</TD><TD>4829</TD><TD>11.934</TD><TD>6.451</TD><TD>6.10</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>069.731250</TD><TD>-6.673611</TD><TD>68</TD><TD></TD><TD>3199896668704440064</TD><TD>04 38 55.5</TD><TD>-06 40 25.0</TD><TD>1.242</TD><TD>4890</TD><TD>12.458</TD><TD>6.305</TD><TD>4.28</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>056.857500</TD><TD>-12.541917</TD><TD>69</TD><TD></TD><TD>5114686272872474880</TD><TD>03 47 25.8</TD><TD>-12 32 30.9</TD><TD>1.247</TD><TD>5006</TD><TD>12.634</TD><TD>6.550</TD><TD>9.00</TD><TD>Conv.</TD><TD>Simbad</TD></TR>
+<TR><TD>354.217083</TD><TD>-11.417139</TD><TD>70</TD><TD></TD><TD>2433715455609798784</TD><TD>23 36 52.1</TD><TD>-11 25 01.7</TD><TD>1.249</TD><TD>4810</TD><TD>11.737</TD><TD>6.442</TD><TD>6.30</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>051.105000</TD><TD>-15.834833</TD><TD>71</TD><TD></TD><TD>5106733402188456320</TD><TD>03 24 25.2</TD><TD>-15 50 05.4</TD><TD>1.278</TD><TD>4944</TD><TD>11.517</TD><TD>6.197</TD><TD>0.62</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>357.135000</TD><TD>-18.549278</TD><TD>72</TD><TD></TD><TD>2390974419276875776</TD><TD>23 48 32.4</TD><TD>-18 32 57.4</TD><TD>1.283</TD><TD>4706</TD><TD>11.583</TD><TD>6.618</TD><TD>6.50</TD><TD>Rapid</TD><TD>Simbad</TD></TR>
+<TR><TD>066.700833</TD><TD>-15.429833</TD><TD>73</TD><TD></TD><TD>3172630287868034944</TD><TD>04 26 48.2</TD><TD>-15 25 47.4</TD><TD>1.307</TD><TD>4881</TD><TD>12.334</TD><TD>6.599</TD><TD>5.85</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>044.966667</TD><TD>-9.793278</TD><TD>74</TD><TD></TD><TD>5161117923061794688</TD><TD>02 59 52.0</TD><TD>-09 47 35.8</TD><TD>1.308</TD><TD>4800</TD><TD>12.063</TD><TD>6.639</TD><TD>5.45</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>050.138750</TD><TD>-14.282889</TD><TD>75</TD><TD></TD><TD>5155187986271622912</TD><TD>03 20 33.3</TD><TD>-14 16 58.4</TD><TD>1.320</TD><TD>4776</TD><TD>12.307</TD><TD>6.687</TD><TD>1.93</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>037.368750</TD><TD>-20.204667</TD><TD>76</TD><TD></TD><TD>5129876953722430208</TD><TD>02 29 28.5</TD><TD>-20 12 16.8</TD><TD>1.334</TD><TD>4829</TD><TD>11.695</TD><TD>6.739</TD><TD>8.00</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>359.223750</TD><TD>-23.290167</TD><TD>77</TD><TD></TD><TD>2339984636258635136</TD><TD>23 56 53.7</TD><TD>-23 17 24.6</TD><TD>1.349</TD><TD>4545</TD><TD>11.475</TD><TD>6.765</TD><TD>8.35</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>061.622500</TD><TD>-7.592278</TD><TD>78</TD><TD></TD><TD>3195826963854173056</TD><TD>04 06 29.4</TD><TD>-07 35 32.2</TD><TD>1.366</TD><TD>4828</TD><TD>12.987</TD><TD>6.797</TD><TD>10.73</TD><TD>Slow</TD><TD>Simbad</TD></TR>
+<TR><TD>011.825000</TD><TD>-22.752250</TD><TD>79</TD><TD></TD><TD>2349094158814399104</TD><TD>00 47 18.0</TD><TD>-22 45 08.1</TD><TD>1.366</TD><TD>4585</TD><TD>10.929</TD><TD>6.051</TD><TD>1.30</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>053.128750</TD><TD>-6.219194</TD><TD>80</TD><TD></TD><TD>3247412647814482816</TD><TD>03 32 30.9</TD><TD>-06 13 09.1</TD><TD>1.382</TD><TD>4714</TD><TD>12.327</TD><TD>6.898</TD><TD>6.66</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>011.910417</TD><TD>-47.696056</TD><TD>81</TD><TD></TD><TD>4975223840046231424</TD><TD>00 47 38.5</TD><TD>-47 41 45.8</TD><TD>1.420</TD><TD>4551</TD><TD>11.514</TD><TD>6.985</TD><TD>5.80</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>066.126667</TD><TD>-10.684000</TD><TD>82</TD><TD></TD><TD>3191365111308746880</TD><TD>04 24 30.4</TD><TD>-10 41 02.4</TD><TD>1.423</TD><TD>4719</TD><TD>12.901</TD><TD>6.944</TD><TD>7.02</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>067.965000</TD><TD>-8.900972</TD><TD>83</TD><TD></TD><TD>3197607794734344320</TD><TD>04 31 51.6</TD><TD>-08 54 03.5</TD><TD>1.439</TD><TD>4440</TD><TD>13.133</TD><TD>7.059</TD><TD>8.02</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>069.150417</TD><TD>-17.789917</TD><TD>84</TD><TD></TD><TD>3171136944919260928</TD><TD>04 36 36.1</TD><TD>-17 47 23.7</TD><TD>1.439</TD><TD>4469</TD><TD>12.879</TD><TD>6.940</TD><TD>7.85</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>078.356250</TD><TD>-8.331167</TD><TD>85</TD><TD></TD><TD>3206907086126334464</TD><TD>05 13 25.5</TD><TD>-08 19 52.2</TD><TD>1.465</TD><TD>4364</TD><TD>13.320</TD><TD>7.086</TD><TD>6.66</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>068.897083</TD><TD>-12.796556</TD><TD>86</TD><TD></TD><TD>3177883999240571904</TD><TD>04 35 35.3</TD><TD>-12 47 47.6</TD><TD>1.480</TD><TD>4512</TD><TD>12.828</TD><TD>6.356</TD><TD>4.00</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>036.722083</TD><TD>-5.295889</TD><TD>87</TD><TD></TD><TD>2488721720245150336</TD><TD>02 26 53.3</TD><TD>-05 17 45.2</TD><TD>1.498</TD><TD>4444</TD><TD>12.485</TD><TD>7.198</TD><TD>5.20</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>046.191667</TD><TD>-12.282750</TD><TD>88</TD><TD></TD><TD>5159567164990031360</TD><TD>03 04 46.0</TD><TD>-12 16 57.9</TD><TD>1.560</TD><TD>4330</TD><TD>12.613</TD><TD>7.098</TD><TD>0.45</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>056.756667</TD><TD>-26.269778</TD><TD>89</TD><TD></TD><TD>5081912751826042624</TD><TD>03 47 01.6</TD><TD>-26 16 11.2</TD><TD>1.577</TD><TD>4410</TD><TD>12.968</TD><TD>7.389</TD><TD>4.50</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>036.529167</TD><TD>-24.913611</TD><TD>90</TD><TD></TD><TD>5118895478259982336</TD><TD>02 26 07.0</TD><TD>-24 54 49.0</TD><TD>1.579</TD><TD>4431</TD><TD>11.728</TD><TD>6.658</TD><TD>5.61</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>034.310833</TD><TD>-27.278306</TD><TD>91</TD><TD></TD><TD>5117016378528360448</TD><TD>02 17 14.6</TD><TD>-27 16 41.9</TD><TD>1.591</TD><TD>4308</TD><TD>12.551</TD><TD>7.451</TD><TD>5.92</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>030.742917</TD><TD>-13.629667</TD><TD>92</TD><TD></TD><TD>5149427640557882368</TD><TD>02 02 58.3</TD><TD>-13 37 46.8</TD><TD>1.594</TD><TD>4207</TD><TD>11.982</TD><TD>7.442</TD><TD>11.96</TD><TD>Slow</TD><TD>Simbad</TD></TR>
+<TR><TD>059.572500</TD><TD>-46.570278</TD><TD>93</TD><TD></TD><TD>4832163770817481856</TD><TD>03 58 17.4</TD><TD>-46 34 13.0</TD><TD>1.630</TD><TD>4261</TD><TD>12.992</TD><TD>7.559</TD><TD>7.80</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>017.237500</TD><TD>-3.025528</TD><TD>94</TD><TD></TD><TD>2531488844210764544</TD><TD>01 08 57.0</TD><TD>-03 01 31.9</TD><TD>1.661</TD><TD>4168</TD><TD>13.074</TD><TD>7.612</TD><TD>2.26</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>023.455417</TD><TD>-4.478250</TD><TD>95</TD><TD></TD><TD>2480756793589426944</TD><TD>01 33 49.3</TD><TD>-04 28 41.7</TD><TD>1.670</TD><TD>4228</TD><TD>13.216</TD><TD>7.682</TD><TD>6.50</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>013.839583</TD><TD>-21.401028</TD><TD>96</TD><TD></TD><TD>2355466790769878400</TD><TD>00 55 21.5</TD><TD>-21 24 03.7</TD><TD>1.689</TD><TD>4135</TD><TD>12.341</TD><TD>7.578</TD><TD>6.84</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>057.816250</TD><TD>-12.396222</TD><TD>97</TD><TD></TD><TD>5114516020369038848</TD><TD>03 51 15.9</TD><TD>-12 23 46.4</TD><TD>1.732</TD><TD>4298</TD><TD>13.375</TD><TD>7.484</TD><TD>0.68</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>036.519167</TD><TD>-29.396917</TD><TD>98</TD><TD></TD><TD>5068272932125221504</TD><TD>02 26 04.6</TD><TD>-29 23 48.9</TD><TD>1.768</TD><TD>4163</TD><TD>12.815</TD><TD>8.000</TD><TD>7.80</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>060.575000</TD><TD>-18.712611</TD><TD>99</TD><TD></TD><TD>5094664333632217088</TD><TD>04 02 18.0</TD><TD>-18 42 45.4</TD><TD>1.771</TD><TD>4076</TD><TD>12.631</TD><TD>7.134</TD><TD>2.62</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>029.321667</TD><TD>-25.230444</TD><TD>100</TD><TD></TD><TD>5121805541941481472</TD><TD>01 57 17.2</TD><TD>-25 13 49.6</TD><TD>1.784</TD><TD>3956</TD><TD>12.793</TD><TD>7.931</TD><TD>5.45</TD><TD>LM</TD><TD>Simbad</TD></TR>
+<TR><TD>020.457083</TD><TD>-42.022861</TD><TD>101</TD><TD></TD><TD>4984094970441940864</TD><TD>01 21 49.7</TD><TD>-42 01 22.3</TD><TD>1.852</TD><TD>4113</TD><TD>12.731</TD><TD>8.099</TD><TD>5.45</TD><TD>LM</TD><TD>Simbad</TD></TR>
+</TABLEDATA></DATA>
+</TABLE>
+<INFO name="matches" value="101">matching records</INFO>
+
+<INFO name="Warning" value="No center provided++++"/>
+<INFO name="Warning" value="increase the precision for computed column 7"/>
+<INFO name="Warning" value="increase the precision for computed column 7"/>
+<INFO name="Warning" value="+++No column for LINK to a row in table: J/AJ/158/77/table2"/>
+</RESOURCE>
+</VOTABLE>
